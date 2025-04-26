@@ -14,14 +14,6 @@ _ = load_dotenv(find_dotenv())
 
 import mysql.connector
 
-def connect_db():
-    return mysql.connector.connect(
-        host="167.86.120.109", 
-        user="langchain_user",
-        password="aaabbc123",
-        database="copergas"
-    )
-
 
 ollama_server_url = "http://localhost:11434"
 model_local = ChatOllama(model="llama3:latest")
